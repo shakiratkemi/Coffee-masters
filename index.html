@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shakirat Coffee Masters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cookie&family=Dancing+Script&family=Laila&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/app.css" />
+  </head>
+  <body>
+    <nav class="main">
+      <h1 class="brand">
+        <img
+          src="/images/coffee_masters_logo.png"
+          alt="Coffee Masters logo"
+          class="logo"
+        />
+        Coffee Masters
+      </h1>
+    </nav>
+
+    <div class="content">
+      <section class="order box">
+        <h2 class="box-title">ITEMS</h2>
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$6.00</div>
+          </li>
+          <ul class="item-options">
+            <li class="item-options-list">Light Foam</li>
+          </ul>
+        </ul>
+
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$7.90</div>
+          </li>
+          <ul class="item-options">
+            <li class="item-options-list">Almond Milk</li>
+            <li class="item-options-list">Double Espresso Shot</li>
+          </ul>
+        </ul>
+
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Croissant</div>
+            <div class="item-price">$5.37</div>
+          </li>
+          <ul class="item-options">
+            <li class="item-options-list">Butter</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="payment">
+        <div class="box name-box">
+          <h2 class="box-title">NAME</h2>
+          <div class="input-method">
+            <label class="user-input-label" for="name">Name for order</label>
+            <input type="text" class="user-input" id="name" />
+          </div>
+        </div>
+
+        <div class="box cc-box">
+          <h2 class="box-title">PAYMENT</h2>
+          <div class="input-method">
+            <label class="user-input-label" for="cc">Card Number</label>
+            <input type="text" class="user-input" id="cc" />
+          </div>
+          <div class="input-method">
+            <label class="user-input-label" for="cc">CCV Number</label>
+            <input type="text" class="user-input" id="ccv" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="totals">
+      <ul class="total">
+        <li class="first-total">Subtotal:</li>
+        <li>$19.27</li>
+      </ul>
+      <ul class="total">
+        <li>Tax:</li>
+        <li>$0.96</li>
+      </ul>
+      <ul class="grand-total">
+        <li>Total:</li>
+        <li>$20.23</li>
+      </ul>
+    </div>
+
+    <section class="final-order">
+      <button class="check-out" type="button">Place Order</button>
+    </section>
+    <script src="/app.js"></script>
+  </body>
+</html>
