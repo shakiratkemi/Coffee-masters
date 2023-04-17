@@ -4,7 +4,7 @@
 
 body {
   font-family: "Laila", sans-serif;
-  background: whitesmoke;
+  background: #efefef;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,9 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  background-color: rgb(55, 19, 19);
+  align-items: center;
+  background-color: #43281c;
+  color: #fbf2c0;
   font-size: 20px;
   font-weight: normal;
 }
@@ -56,9 +58,9 @@ body {
 }
 
 .box {
-  background-color: rgb(233, 210, 164);
+  background-color: #eee1d5;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(233, 210, 164, 0.833);
+  box-shadow: 0 1px 3px rgba(0 0 0 / 0.2);
   padding: 15px;
   margin-bottom: 20px;
   width: 100%;
@@ -73,7 +75,7 @@ body {
 .item {
   display: grid;
   padding: 10px 0;
-  border-bottom: 2px solid blanchedalmond;
+  border-bottom: 2px solid #ddb892;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas:
     "quantity title  price"
@@ -81,19 +83,79 @@ body {
   row-gap: 8px;
 }
 
-.grand-total {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-quantity {
+  grid-area: quantity;
+}
+
+.item-title {
+  grid-area: title;
   font-weight: bold;
 }
 
-.final-order,
+.item-price {
+  grid-area: price;
+}
+
+.item-options-list {
+  grid-area: options;
+  color: #b08968;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.item-option {
+  margin-bottom: 5px;
+}
+
+.input-method {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px #885a2d solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 100%;
+  text-indent: 18px;
+  font-size: 18px;
+}
+
+.user-input-label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
+
+.total {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+.total-headings,
+.total-prices {
+  font-weight: bold;
+}
+
 .check-out {
-  text-align: center;
-  border: 5px;
-  background-color: blanchedalmond;
-  margin: 2px;
-  border-radius: 30px;
-  padding: 5px 10px;
+  background-color: #deb993;
+  border: none;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 100px;
+  font-size: 16px;
 }
